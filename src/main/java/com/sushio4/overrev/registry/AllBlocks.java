@@ -9,7 +9,9 @@ public class AllBlocks {
     private static final CreateRegistrate REGISTRATE = CreateOverrev.registrate();
 
     public static final BlockEntry<DebugEngineBlock> DEBUG_ENGINE = 
-        REGISTRATE.block("debug_engine", DebugEngineBlock::new).item().build().register();
+        REGISTRATE.block("debug_engine", DebugEngineBlock::new)
+            .properties(p -> p.noOcclusion())    
+            .item().build().register();
 
     // load class
     public static void register() {
