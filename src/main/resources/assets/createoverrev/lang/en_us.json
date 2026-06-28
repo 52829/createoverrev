@@ -1,0 +1,13 @@
+{
+  "itemGroup.createoverrev": "Example Mod Tab",
+  "block.createoverrev.example_block": "Example Block",
+  "item.createoverrev.example_item": "Example Item",
+
+  "createoverrev.configuration.title": "Create: Over-rev Configs",
+  "createoverrev.configuration.section.createoverrev.common.toml": "Create: Over-rev Configs",
+  "createoverrev.configuration.section.createoverrev.common.toml.title": "Create: Over-rev Configs",
+  "createoverrev.configuration.items": "Item List",
+  "createoverrev.configuration.logDirtBlock": "Log Dirt Block",
+  "createoverrev.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createoverrev.configuration.magicNumber": "Magic Number"
+}
