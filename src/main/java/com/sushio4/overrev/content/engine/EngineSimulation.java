@@ -11,7 +11,7 @@ public class EngineSimulation {
     private float baseFriction = 7;
     private float rpmFriction = 0.1f;
     private float pumpLoss = 0.15f;
-    private float inertia = 30;
+    private float inertia = 20;
 
     public EngineSimulation() {
 
