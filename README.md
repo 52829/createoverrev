@@ -1,16 +1,27 @@
 
-Installation information
+Create: Over-rev
 =======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This is an addon for Minecraft 1.21.1 Create mod that adds realistic-ish behaving internal combustion engines and ocuses on designing, tuning and operating them. Some rough ideas include:
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- Simulation  
+  Basic physics like torque, acceleration, friction etc. Not full-blown thermodynamics, but approximate models are welcome
+- Abuse and wear  
+  Worn engine is less efficient and requires maintenance. Well operated engine can run indefinitely. Poorly treated and unmaintained ones fail. Potential sources of wear:
+  - High load on low rpm
+  - Over-revving
+  - Rapid speed changes
+  - Starting/stopping
+  - Wrong fuel
+  - Starting in wrong direction
+- Modularity  
+  Things you can choose:
+  - cylinder count
+  - cylinder layout
+  - material (changes limits of the engine and resistance to wear)
+  - fuel (diesel, gasoline, maybe hydrogen in the future)
+  - 2-stroke / 4-stroke (2-strokes have abysmal efficiency but make more power and can be started in any direction)
+  - fuel system (common rail, direct injection, port injection)
 
 Mapping Names:
 ============
