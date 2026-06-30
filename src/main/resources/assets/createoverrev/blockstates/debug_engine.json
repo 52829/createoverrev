@@ -1,5 +1,8 @@
 {
     "variants": {
-        "": { "model": "createoverrev:block/engine/debug_engine" }
+        "facing=north": { "model": "createoverrev:block/engine/debug_engine" },
+        "facing=south": { "model": "createoverrev:block/engine/debug_engine", "y": 180 },
+        "facing=east":  { "model": "createoverrev:block/engine/debug_engine", "y": 90 },
+        "facing=west":  { "model": "createoverrev:block/engine/debug_engine", "y": 270 }
     }
 }

@@ -6,18 +6,21 @@ import com.sushio4.overrev.registry.AllBlockEntities;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 
-public class DebugEngineBlock extends HorizontalKineticBlock implements IBE<DebugEngineBlockEntity>{
+public class DebugEngineBlock extends HorizontalKineticBlock implements IBE<DebugEngineBlockEntity> {
     public DebugEngineBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        Direction facing = context.getHorizontalDirection().getOpposite();
+        return defaultBlockState().setValue(HORIZONTAL_FACING, facing);
     }
 
     @Override
